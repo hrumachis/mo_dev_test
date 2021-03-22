@@ -13,9 +13,7 @@ run commands in project directory:<br>
     height: number, // required
     elements: Element[] // required
 }
-```
-<br>
-```javascript
+
 Element {
     type: ELEMENT_TYPE, // required
     src: string, // required with type ELEMENT_TYPE.IMAGE
@@ -29,9 +27,7 @@ Element {
     width: number, // required with type ELEMENT_TYPE.RECTANGLE && optional with type ELEMENT_TYPE.TEXT
     strokeSize: number, // optional, default = 1
 }
-```
-<br>
-```javascript
+
 ELEMENT_TYPE {
     TEXT,
     IMAGE,
