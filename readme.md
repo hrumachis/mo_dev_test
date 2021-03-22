@@ -7,31 +7,37 @@ run commands in project directory:<br>
 * private class functions, variables starts with underscore '_'
 
 # Json Schema
-`{<br>
-    width: number, // required<br>
-    height: number, // required<br>
-    elements: Element[] // required<br>
-}`<br>
-<br><br>
-`Element {<br>
-    type: ELEMENT_TYPE, // required<br>
-    src: string, // required with type ELEMENT_TYPE.IMAGE<br>
-    scale: number, // optional, default = 1<br>
-    x: number, // optional, default = 0<br>
-    y: number, // optional, default = 0<br>
-    color: string, // optional, default = "#000000" only HEX color values<br>
-    text: string, // required with type ELEMENT_TYPE.TEXT<br>
-    fontSize: number, // optional, default = 16<br>
-    height: number, // required with type ELEMENT_TYPE.RECTANGLE && optional with type ELEMENT_TYPE.TEXT<br>
-    width: number, // required with type ELEMENT_TYPE.RECTANGLE && optional with type ELEMENT_TYPE.TEXT<br>
-    strokeSize: number, // optional, default = 1<br>
-}`<br>
-<br><br>
-`ELEMENT_TYPE {<br>
-    TEXT,<br>
-    IMAGE,<br>
-    RECTANGLE,<br>
-}`<br>
+```javascript
+{
+    width: number, // required
+    height: number, // required
+    elements: Element[] // required
+}
+```
+<br>
+```javascript
+Element {
+    type: ELEMENT_TYPE, // required
+    src: string, // required with type ELEMENT_TYPE.IMAGE
+    scale: number, // optional, default = 1
+    x: number, // optional, default = 0
+    y: number, // optional, default = 0
+    color: string, // optional, default = "#000000" only HEX color values
+    text: string, // required with type ELEMENT_TYPE.TEXT
+    fontSize: number, // optional, default = 16
+    height: number, // required with type ELEMENT_TYPE.RECTANGLE && optional with type ELEMENT_TYPE.TEXT
+    width: number, // required with type ELEMENT_TYPE.RECTANGLE && optional with type ELEMENT_TYPE.TEXT
+    strokeSize: number, // optional, default = 1
+}
+```
+<br>
+```javascript
+ELEMENT_TYPE {
+    TEXT,
+    IMAGE,
+    RECTANGLE,
+}
+```
 
 # Multiorders Developer Test
 
