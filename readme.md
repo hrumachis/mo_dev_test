@@ -1,12 +1,16 @@
-# How to run project
+# Multiorders Developer Test
+
+Here at Multiorders we process shipments for sellers in various marketplaces, one of the features we have is to allow the configuration is shipment labels for the sellers orders. We are looking to expand our capabilities in this domain and allow for a more powerful way for our users to create custom templates for their labels. To do that we need to create a tool that generates a canvas representation of a label out of a JSON data structure.
+
+### How to run project
 run commands in project directory:<br>
 `npm install`<br>
 `npm start label.json` // first argument is path to json file<br>
 
-# JS code style
+### JS code style
 * private class functions, variables starts with underscore '_'
 
-# Json Schema
+## Json Schema
 ```javascript
 {
     width: number, // required
@@ -28,16 +32,12 @@ Element {
     strokeSize: number, // optional, default = 1
 }
 
-ELEMENT_TYPE {
+enum ELEMENT_TYPE {
     TEXT,
     IMAGE,
     RECTANGLE,
 }
 ```
-
-# Multiorders Developer Test
-
-Here at Multiorders we process shipments for sellers in various marketplaces, one of the features we have is to allow the configuration is shipment labels for the sellers orders. We are looking to expand our capabilities in this domain and allow for a more powerful way for our users to create custom templates for their labels. To do that we need to create a tool that generates a canvas representation of a label out of a JSON data structure.
 
 ## User Interface
 
