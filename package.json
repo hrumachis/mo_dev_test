@@ -1,0 +1,14 @@
+{
+  "name": "mo_dev_test",
+  "version": "1.0.0",
+  "description": "Here at Multiorders we process shipments for sellers in various marketplaces, one of the features we have is to allow the configuration is shipment labels for the sellers orders. We are looking to expand our capabilities in this domain and allow for a more powerful way for our users to create custom templates for their labels. To do that we need to create a tool that generates a canvas representation of a label out of a JSON data structure.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pdf-lib": "^1.16.0"
+  }
+}
