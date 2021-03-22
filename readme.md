@@ -1,19 +1,19 @@
 # How to run project
-run commands in project directory:
-`npm install`
-`npm start label.json` // first argument is path to json file
+run commands in project directory:<br>
+`npm install`<br>
+`npm start label.json` // first argument is path to json file<br>
 
 # JS code style
-* private class functions, variables start with underscore '_'
+* private class functions, variables starts with underscore '_'
 
-# Json Scheme
-{
+# Json Schema
+`{
     width: number, // required
     height: number, // required
     elements: Element[] // required
-}
-
-Element {
+}`
+<br>
+`Element {
     type: ELEMENT_TYPE, // required
     src: string, // required with type ELEMENT_TYPE.IMAGE
     scale: number, // optional, default = 1
@@ -25,13 +25,13 @@ Element {
     height: number, // required with type ELEMENT_TYPE.RECTANGLE && optional with type ELEMENT_TYPE.TEXT
     width: number, // required with type ELEMENT_TYPE.RECTANGLE && optional with type ELEMENT_TYPE.TEXT
     strokeSize: number, // optional, default = 1
-}
-
-ELEMENT_TYPE {
+}`
+<br>
+`ELEMENT_TYPE {
     TEXT,
     IMAGE,
     RECTANGLE,
-}
+}`
 
 # Multiorders Developer Test
 
